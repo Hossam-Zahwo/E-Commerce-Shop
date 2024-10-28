@@ -125,7 +125,7 @@ function App() {
           <Route path="/contact" element={<Contact theme={theme} />} />
           <Route path="/about" element={<About theme={theme} />} />
         </Routes>
-        <ImageComponent />
+      
         <Footer theme={theme} setTheme={setTheme} />
       </div>
     </React.Fragment>
