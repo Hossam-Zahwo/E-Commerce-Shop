@@ -10,7 +10,7 @@ import Contact from './pages/contact';
 import Cart from './pages/Cart';
 import Liks from './pages/Liks';
 import About from './pages/about';
-
+import ImageComponent from './ImageComponent'
 function App() {
   // Add To Cart
   const [cart, setCart] = useState([]);
@@ -69,23 +69,67 @@ function App() {
     setTheme(theme === 'dark' ? 'light' : 'dark');
   };
 
-  return (
+  return  (
     <React.Fragment>
       <div className={`h-full w-full ${theme === 'dark' ? 'bg-black text-white' : 'bg-white text-black'}`}>
-        <Nav searchbtn={searchbtn} colorRef={colorRef} theme={theme} setTheme={setTheme} handleThemeSwitch={handleThemeSwitch} setClose={setClose} />
+        <Nav
+          searchbtn={searchbtn}
+          colorRef={colorRef}
+          theme={theme}
+          setTheme={setTheme}
+          handleThemeSwitch={handleThemeSwitch}
+          setClose={setClose}
+        />
         <Routes>
-          <Route path="/" element={<Home view={view} theme={theme} setTheme={setTheme} detail={detail} close={close} setClose={setClose} AddtoCart={AddtoCart} LiksProducts={LiksProducts} />} />
-          <Route path="/product" element={<Product prod={prod} setProd={setProd} detail={detail} view={view} close={close} setClose={setClose} theme={theme} setTheme={setTheme} handleThemeSwitch={handleThemeSwitch} AddtoCart={AddtoCart} LiksProducts={LiksProducts} />} />
-          <Route path="/Cart" element={<Cart theme={theme} cart={cart} setCart={setCart} />} />
-          <Route path="/Liks" element={<Liks theme={theme} liks={liks} setLiks={setLiks} />} />
+          <Route
+            path="/"
+            element={
+              <Home
+                view={view}
+                theme={theme}
+                setTheme={setTheme}
+                detail={detail}
+                close={close}
+                setClose={setClose}
+                AddtoCart={AddtoCart}
+                LiksProducts={LiksProducts}
+              />
+            }
+          />
+          <Route
+            path="/product"
+            element={
+              <Product
+                prod={prod}
+                setProd={setProd}
+                detail={detail}
+                view={view}
+                close={close}
+                setClose={setClose}
+                theme={theme}
+                setTheme={setTheme}
+                handleThemeSwitch={handleThemeSwitch}
+                AddtoCart={AddtoCart}
+                LiksProducts={LiksProducts}
+              />
+            }
+          />
+          <Route
+            path="/Cart"
+            element={<Cart theme={theme} cart={cart} setCart={setCart} />}
+          />
+          <Route
+            path="/Liks"
+            element={<Liks theme={theme} liks={liks} setLiks={setLiks} />}
+          />
           <Route path="/contact" element={<Contact theme={theme} />} />
           <Route path="/about" element={<About theme={theme} />} />
-
         </Routes>
+        <ImageComponent />
         <Footer theme={theme} setTheme={setTheme} />
       </div>
     </React.Fragment>
   );
-}
+};
 
 export default App;
