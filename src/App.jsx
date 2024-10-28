@@ -10,7 +10,7 @@ import Contact from './pages/contact';
 import Cart from './pages/Cart';
 import Liks from './pages/Liks';
 import About from './pages/about';
-import ImageComponent from './ImageComponent'
+
 function App() {
   // Add To Cart
   const [cart, setCart] = useState([]);

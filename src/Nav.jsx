@@ -1,7 +1,7 @@
 
 import React, { useRef, useState,useEffect } from 'react'
 import { FaTruck } from "react-icons/fa";
-import Logo from '../public/shop-high-resolution-logo-transparent (1).png'
+import Logo from '../public/images/shop-high-resolution-logo-transparent (1).png'
 import { FaRegHeart } from "react-icons/fa";
 import { IoBagCheckOutline } from "react-icons/io5"
 import Darck from "./pages/home-Component/Darck"

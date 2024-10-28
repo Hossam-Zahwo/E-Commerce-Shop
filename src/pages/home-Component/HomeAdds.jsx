@@ -6,7 +6,7 @@ function HomeAdds() {
     <div className='w-[100%]  md:py-[30px] md:px-[40px]'>
     <div className='contenar w-full bg-sky-600 py-[20px] px-[30px] border rounded-lg  grid grid-cols-1 md:grid-cols-2'>
     <div className=' flex md:hidden'>
-      <img src="../../public/unnamed__1_-removebg-preview.png" alt="" />
+      <img src="/public/images/unnamed__1_-removebg-preview.png" alt="" />
     </div>
     <div className='mt-[10px] ml-[20px] flex  flex-col justify-center items-center md:items-start'>
       <h4 className='text-slate-300 text-[16px] mr-[20px] tracking-normal'>LATEST TECHNOLGY ADDED</h4>
@@ -17,7 +17,7 @@ function HomeAdds() {
     </div>
   
     <div className='hidden md:flex '>
-      <img src="../../public/unnamed__1_-removebg-preview.png" alt="" />
+      <img src="/public/images/unnamed__1_-removebg-preview.png" alt="" />
       
     </div>
     </div>

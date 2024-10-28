@@ -2,7 +2,7 @@ import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaYoutube } from "react-icons/fa";
-import Logo from '../public/shop-high-resolution-logo-transparent (1).png'
+import Logo from '../public/images/shop-high-resolution-logo-transparent (1).png'
 function Footer({theme,setTheme}) {
   return (
     <div className={`m-0 p-0 w-full absolute z-30 box-border border-t-2 ${theme === 'dark' ? 'bg-black text-white' : 'bg-white text-black'}`}>
