@@ -41,7 +41,7 @@ const Productdefult =[
     title:"JBL ",
     Cat:"Speakers",
     price:  299,
-    image:"../public/images/1_JBL_PARTYBOX_110_HERO_x2.png"
+    image:"../public/images/jbl.png"
   },
   {
     id:7,
@@ -55,7 +55,7 @@ const Productdefult =[
     title:"TV LG ",
     Cat:"TV",
     price:  899,
-    image:"../public/images/a_2025-55-front-removebg-preview.png"
+    image:"../public/images/tv.png"
   },
   {
     id:9,
