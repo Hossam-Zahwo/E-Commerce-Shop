@@ -72,8 +72,8 @@ function Product({ prod, setProd, detail, view, close, setClose, theme, setTheme
               <h3 className="text-[16px] uppercase font-semibold">Categories</h3>
               <ul className="mt-[10px] flex justify-center items-center flex-col text-[14px] md:text-[18px] gap-5">
                 <li className="mt-[20px] cursor-pointer whitespace-nowrap  " onClick={allProducts}>All Products</li>
-                <li className='grid grid-cols-4 md:flex md:flex-col'>
-                <li className="mt-[20px] cursor-pointer whitespace-nowrap mx-5" onClick={() => filterProduct("Tablet")}>Tablet</li>
+                <li className='grid grid-cols-3 md:flex md:flex-col w-full '>
+                <li className="mt-[10px] cursor-pointer whitespace-nowrap mx-5" onClick={() => filterProduct("Tablet")}>Tablet</li>
                 <li className="mt-[20px] cursor-pointer whitespace-nowrap mx-5" onClick={() => filterProduct("Phone")}>Phone</li>
                 <li className="mt-[20px] cursor-pointer whitespace-nowrap mx-5" onClick={() => filterProduct("Phone")}>Phone</li>
                 <li className="mt-[20px] cursor-pointer whitespace-nowrap mx-5" onClick={() => filterProduct("Laptop")}>Laptop</li>
