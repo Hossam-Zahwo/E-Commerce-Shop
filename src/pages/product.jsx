@@ -70,21 +70,22 @@ function Product({ prod, setProd, detail, view, close, setClose, theme, setTheme
           <div className="grid grid-col-1   md:flex justify-start items-start w-full">
             <div className="py-[20px] w-[100%] mr-5 md:w-[15%] flex justify-center items-center flex-col">
               <h3 className="text-[16px] uppercase font-semibold">Categories</h3>
-              <ul className="mt-[10px] flex justify-center items-center flex-col text-[10px] md:text-[18px] gap-5">
+              <ul className="mt-[10px] flex justify-center items-center flex-col text-[15px] md:text-[18px] gap-5">
                 <li className="mt-[20px] cursor-pointer whitespace-nowrap  " onClick={allProducts}>All Products</li>
                 <li className='grid grid-cols-4 md:flex md:flex-col'>
-                <li className="mt-[20px] cursor-pointer whitespace-nowrap" onClick={() => filterProduct("Tablet")}>Tablet</li>
-                <li className="mt-[20px] cursor-pointer whitespace-nowrap" onClick={() => filterProduct("Phone")}>Phone</li>
-                <li className="mt-[20px] cursor-pointer whitespace-nowrap" onClick={() => filterProduct("Laptop")}>Laptop</li>
-                <li className="mt-[20px] cursor-pointer whitespace-nowrap" onClick={() => filterProduct("Headphone")}>Headphone</li>
-                <li className="mt-[20px] cursor-pointer whitespace-nowrap" onClick={() => filterProduct("Puds")}>Puds</li>
-                <li className="mt-[20px] cursor-pointer whitespace-nowrap" onClick={() => filterProduct("TV")}>TV</li>
-                <li className="mt-[20px] cursor-pointer whitespace-nowrap" onClick={() => filterProduct("Smart Watch")}>Smart Watch</li>
-                <li className="mt-[20px] cursor-pointer whitespace-nowrap" onClick={() => filterProduct("Speakers")}>Speakers</li>
+                <li className="mt-[20px] cursor-pointer whitespace-nowrap mx-5" onClick={() => filterProduct("Tablet")}>Tablet</li>
+                <li className="mt-[20px] cursor-pointer whitespace-nowrap mx-5" onClick={() => filterProduct("Phone")}>Phone</li>
+                <li className="mt-[20px] cursor-pointer whitespace-nowrap mx-5" onClick={() => filterProduct("Phone")}>Phone</li>
+                <li className="mt-[20px] cursor-pointer whitespace-nowrap mx-5" onClick={() => filterProduct("Laptop")}>Laptop</li>
+                <li className="mt-[20px] cursor-pointer whitespace-nowrap mx-5" onClick={() => filterProduct("Headphone")}>Headphone</li>
+                <li className="mt-[20px] cursor-pointer whitespace-nowrap mx-5" onClick={() => filterProduct("Puds")}>Puds</li>
+                <li className="mt-[20px] cursor-pointer whitespace-nowrap mx-5" onClick={() => filterProduct("TV")}>TV</li>
+                <li className="mt-[20px] cursor-pointer whitespace-nowrap mx-5" onClick={() => filterProduct("Smart Watch")}>Smart Watch</li>
+                <li className="mt-[20px] cursor-pointer whitespace-nowrap mx-5" onClick={() => filterProduct("Speakers")}>Speakers</li>
                 </li>
               </ul>
             </div>
-            <div className="w-[85%] flex flex-col justify-center items-center">
+            <div className="md:w-[85%] flex flex-col justify-center items-center">
       <div className="md:grid md:grid-cols-3 gap-5">
         {getVisibleProducts().map((curElm) => (
           <div key={curElm.id} className='box cursor-pointer border-2 flex flex-col justify-center items-center w-[240px] md:w-[280px] h-[350px] ml-6 transition-all duration-300 hover:shadow-2xl'>
