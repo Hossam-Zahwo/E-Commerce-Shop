@@ -70,7 +70,7 @@ function Product({ prod, setProd, detail, view, close, setClose, theme, setTheme
           <div className="grid grid-col-1   md:flex justify-start items-start w-full">
             <div className="py-[20px] w-[100%] mr-5 md:w-[15%] flex justify-center items-center flex-col">
               <h3 className="text-[16px] uppercase font-semibold">Categories</h3>
-              <ul className="mt-[10px] flex justify-center items-center flex-col text-[15px] md:text-[18px] gap-5">
+              <ul className="mt-[10px] flex justify-center items-center flex-col text-[14px] md:text-[18px] gap-5">
                 <li className="mt-[20px] cursor-pointer whitespace-nowrap  " onClick={allProducts}>All Products</li>
                 <li className='grid grid-cols-4 md:flex md:flex-col'>
                 <li className="mt-[20px] cursor-pointer whitespace-nowrap mx-5" onClick={() => filterProduct("Tablet")}>Tablet</li>
