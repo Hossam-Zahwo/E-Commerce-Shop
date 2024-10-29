@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import { IoCartOutline } from "react-icons/io5";
 import { IoEyeOutline } from "react-icons/io5";
 import { FaRegHeart } from "react-icons/fa";
-import { Link } from 'react-router-dom';
 import { useAuth0 } from "@auth0/auth0-react";
 import { FaArrowCircleRight } from "react-icons/fa";
 import { FaArrowCircleLeft } from "react-icons/fa";

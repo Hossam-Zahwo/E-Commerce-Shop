@@ -17,7 +17,7 @@ function HomeAdds() {
     </div>
   
     <div className='hidden md:flex '>
-      <img src="/public/images/unnamed__1_-removebg-preview.png" alt="" />
+      <img src="/images/unnamed__1_-removebg-preview.png" alt="" />
       
     </div>
     </div>

@@ -15,22 +15,22 @@ function Home({view,theme,setTheme,detail , close,setClose,AddtoCart,LiksProduct
   const products =[
     {
       id:1,
-      image:"/public/images/all-nova-12i.png" ,
+      image:"/images/all-nova-12i.png" ,
       title:'23 products'
     },
     {
       id:2,
-      image:"/public/images/LENOVO-V15-G4-Laptop.png" ,
+      image:"/images/LENOVO-V15-G4-Laptop.png" ,
       title:'23 products'
     },
     {
       id:3,
-      image:"/public/images/png-clipart-apple-watch-apple-watch-white-removebg-preview.png" ,
+      image:"/images/png-clipart-apple-watch-apple-watch-white-removebg-preview.png" ,
       title:'23 products'
     },
     {
       id:4,
-      image:"/public/images/png-transparent-television-set-led-backlit-lcd-aoc-international-smart-tv-led-miscellaneous-television-rectangle-removebg-preview.png" ,
+      image:"/images/png-transparent-television-set-led-backlit-lcd-aoc-international-smart-tv-led-miscellaneous-television-rectangle-removebg-preview.png" ,
       title:'23 products'
     },
 
@@ -118,7 +118,7 @@ function Home({view,theme,setTheme,detail , close,setClose,AddtoCart,LiksProduct
                 </div>
             </div>
             <div className='w-[100%] flex flex-col justify-center items-center'>
-              <img src="../../public/images/unnamed__1_-removebg-preview.png" alt="" />
+              <img src="../images/unnamed__1_-removebg-preview.png" alt="" />
               <Link to='/product' className='flex md:hidden justify-center items-center my-10 w-52 text-gray-700 gap-1 bg-white p-2 rounded-full font-bold hover:bg-blue-600 hover:text-white transition-all duration-500'>Shop  <FaArrowRight  className='transform transition-transform duration-500 hover:translate-x-4'/></Link>
             </div>
        </div>

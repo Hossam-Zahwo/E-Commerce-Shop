@@ -1,10 +1,10 @@
 import { Link } from 'react-router-dom';
 import { FaArrowRight } from "react-icons/fa6";
-import Logo from '/public/images/shop-high-resolution-logo-transparent (1).png'
+import Logo from '/images/shop-high-resolution-logo-transparent (1).png'
 function About({ theme }) {
   return (
     <div className={`mt-[180px]  h-full p font-sans border-box ${theme === 'dark' ? 'bg-black text-white' : 'bg-white text-black'}`}>
-      <div className=' h-[800px] py-56 w-full flex justify-center items-center  bg-[url("/public/images/staor.jpg")] bg-center bg-cover bg-no-repeat  bg-fixed container:m-0'>
+      <div className=' h-[800px] py-56 w-full flex justify-center items-center  bg-[url("/images/staor.jpg")] bg-center bg-cover bg-no-repeat  bg-fixed container:m-0'>
         <div className='flex flex-col justify-center items-center mt-60  px-5'>
           <div className='flex justify-center items-center md:items-center  flex-col w-[100%]  gap-10'>
           <div className='flex gap-5 items-center'>
