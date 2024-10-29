@@ -10,7 +10,7 @@ import Contact from './pages/contact';
 import Cart from './pages/Cart';
 import Liks from './pages/Liks';
 import About from './pages/about';
-
+import { getStorage, ref, getDownloadURL } from "firebase/storage";
 function App() {
   // Add To Cart
   const [cart, setCart] = useState([]);
@@ -69,6 +69,10 @@ function App() {
     setTheme(theme === 'dark' ? 'light' : 'dark');
   };
 
+
+  const storage = getStorage(); 
+  const storageRef = ref(storage, 'path/to/your-image.jpg');
+   getDownloadURL(storageRef).then((url) => { const img = document.getElementById('your-img-id'); img.src = url; }).catch((error) => { console.error("Error getting download URL:", error); });
   return  (
     <React.Fragment>
       <div className={`h-full w-full ${theme === 'dark' ? 'bg-black text-white' : 'bg-white text-black'}`}>
